@@ -1,4 +1,4 @@
-# wallpaper_app
+# Images Editing app
 
 A new Flutter project.
 
