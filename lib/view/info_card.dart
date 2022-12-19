@@ -12,12 +12,12 @@ class InfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Card(
-        color: Colors.white24,
+        color: Colors.white,
         margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         child: ListTile(
           leading: Icon(
             icon,
-            color: Colors.black38,
+            color: Colors.black26,
           ),
           title: Text(
             text,
