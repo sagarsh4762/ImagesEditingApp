@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696045029703",
+    "project_id": "edify-8f53e",
+    "storage_bucket": "edify-8f53e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696045029703:android:92be65ce2c91f998686462",
+        "android_client_info": {
+          "package_name": "com.example.wallpaper_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696045029703-30rdcivvaqkereqejk22ct8b224i98mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuCMgHnahCylUkWwGUUJ2RBdY11THl5DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696045029703-30rdcivvaqkereqejk22ct8b224i98mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
