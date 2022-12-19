@@ -6,6 +6,8 @@ import 'package:wallpaper_app/services/firebase_services.dart';
 import 'package:wallpaper_app/view/info_card.dart';
 import 'package:wallpaper_app/view/login_page.dart';
 
+import '../widgets/customAppBar.dart';
+
 class ProfileDetail extends StatefulWidget {
   // static const url = "Images Editing App";
 
@@ -17,10 +19,12 @@ class _ProfileDetailState extends State<ProfileDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("About Me"),
-        ),
         backgroundColor: Colors.white,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.white,
+          title: CustomAppBar(),
+        ),
         body: SafeArea(
           minimum: const EdgeInsets.only(top: 100),
           child: Column(
@@ -31,10 +35,10 @@ class _ProfileDetailState extends State<ProfileDetail> {
                     "${FirebaseAuth.instance.currentUser!.photoURL}"),
               ),
               Text(
-                "${FirebaseAuth.instance.currentUser!.displayName}",
+                "${FirebaseAuth.instance.currentUser!.displayName?.toUpperCase()}",
                 style: const TextStyle(
-                  fontSize: 40.0,
-                  color: Colors.black54,
+                  fontSize: 25.0,
+                  color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   fontFamily: "Pacifico",
                 ),
