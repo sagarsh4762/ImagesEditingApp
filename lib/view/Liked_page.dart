@@ -55,8 +55,7 @@ class _LikedPageState extends State<LikedPage> {
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 13,
-                    mainAxisSpacing: 10,
-                    mainAxisExtent: 400,
+                    mainAxisExtent: 250,
                   ),
                   itemBuilder: (context, index) {
                     final url = dataItems[index];

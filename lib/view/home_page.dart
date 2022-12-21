@@ -96,8 +96,7 @@ class _HomePageState extends State<HomePage> {
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         crossAxisSpacing: 13,
-                        mainAxisSpacing: 10,
-                        mainAxisExtent: 400,
+                        mainAxisExtent: 300,
                       ),
                       itemBuilder: (context, index) {
                         final url = dataItems[index];
@@ -114,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                                 Container(
                                   padding: const EdgeInsets.only(
                                       top: 10, bottom: 50),
-                                  height: 400,
+                                  height: 800,
                                   width: MediaQuery.of(context).size.width / 2,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(20)),
@@ -149,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                                   right: 0,
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        vertical: 2, horizontal: 2),
+                                        vertical: 2, horizontal: 3),
                                     child: IconButton(
                                       icon: provider.isExist(dataItems[index])
                                           ? const Icon(
